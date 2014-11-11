@@ -1,0 +1,19 @@
+/*
+*PureWeb作业，读书管理系统
+*Author:rccoder
+*Author Url: www.rccoder.net
+ */
+/************************
+*全局页面
+ ***********************/
+ body html{margin:0px;}
+ .content{text-align: center; font-family: "黑体";}
+ .top{background: rgb(47, 143, 211); font-size: 14px;}
+ .top h1{color:white; border:solid 20px rgb(47, 143, 211)}
+ footer{height:20px; text-align: center;font-family: "黑体";}
+ /************************
+*登录页面
+ ***********************/
+ .login{margin: 10%;}
+ .login input{border: solid 1px rgb(203, 199, 199); margin:2% 0; padding:1% 0}
+ .login .submit .button-login{padding:5px 20px; margin-left:15%}
