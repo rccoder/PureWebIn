@@ -17,3 +17,13 @@
  .login{margin: 10%;}
  .login input{border: solid 1px rgb(203, 199, 199); margin:2% 0; padding:1% 0}
  .login .submit .button-login{padding:5px 20px; margin-left:15%}
+ /*********************
+ *图书展示界面
+ **********************/
+ .bookcontent{max-width:800px; margin:0px auto}
+ .bookcontent .type{float:left}
+ .bookcontent .type li{border:1px solid rgb(216, 216, 216); padding-left:1em; padding-right:1em; width:100px; height:40px; padding-top:14px;list-style-type:none;}
+ .bookcontent .type li a{font-size:20px; text-decoration:none; }
+ .bookcontent .type li a:hover{font-size:20px; background:rgb(47, 143, 211); border:15px solid rgb(47, 143, 211);}
+ .bookcontent table{float:right; width:80%;margin-bottom:164px}
+ .bookcontent th{border-bottom:1em solid white}

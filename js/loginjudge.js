@@ -5,7 +5,7 @@ function login_submit(thisform)
 		if((username.value=="" || username.value==null) && (password.value=="" || password.value==null))
 		{
 			alert("Waring:用户名和密码不能为空");
-			return flase;
+			return false;
 		}
 		else if((username.value=="" || username.value==null))
 		{
