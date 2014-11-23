@@ -27,6 +27,12 @@
 					<form action="" method="post" onsubmit="return search(this)">
 						<input type="text" class="booksearchInput" name="keyword" value="search.." />
 					</form>
+					<?php 
+						if($_POST['keyword'] && $_POST['keyword'] != "search..")
+						{
+							$search .= "and name like '%$_POST[keyword]%'";
+						}
+					 ?>
 				</div>
 				<div class="list">
 					<table>
@@ -45,9 +51,8 @@
 								include_once('php/conn.php');
 								//include_one('php/page.php'); 
 
-								$sql = "SELECT * FROM book where  1=1";
+								$sql = "SELECT * FROM book where  1=1 $search order by id";
 								$result = mysql_query($sql) or die(mysql_error());
-								$result = mysql_query($sql);
 								while($row = mysql_fetch_array($result))
 								{
 							 ?>
@@ -57,7 +62,11 @@
 								<td><?php echo $row['bookauthor']?></td>
 								<td><?php echo $row['bookdata']?></td>
 								<td><?php echo $row['bookprice']?></td>
-								<td>详情</td>
+								<td>
+									<option value="">详情</option>
+									<a href="delete.php?id=<?php echo $row['id'] ?>">删除</a>
+									<a href="update.php?id=<?php echo $row['id'] ?>">修改</a>
+								</td>
 							</tr>
 							<?php 
 								}
@@ -69,7 +78,7 @@
 		</div>
 	</div>
 	<footer>
-		<p>
+		<p div="copyright">
 			CopyRight&nbsp;2014&nbsp;by&nbsp;<a href="http://www.rccoder.net">若兮为尘</a> and <a href="HTTP://www.pureweb.com">PureWeb</a>
 		</p>
 	</footer>

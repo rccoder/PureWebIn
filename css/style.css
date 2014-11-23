@@ -6,11 +6,13 @@
 /************************
 *全局页面
  ***********************/
- body html{margin:0px;}
- .content{text-align: center; font-family: "黑体";}
+ body html p a{margin:0px;}
+ .content{text-align: center; font-family: "黑体";min-height: 600px;max-height: 600px;}
  .top{background: rgb(47, 143, 211); font-size: 14px;}
  .top h1{color:white; border:solid 20px rgb(47, 143, 211)}
- footer{height:20px; text-align: center;font-family: "黑体";}
+ footer{height: 100px; font-family: "黑体";background: rgb(234, 227, 227);}
+ footer p{text-align: right;max-width:100%;}
+ 
  /************************
 *登录页面
  ***********************/
