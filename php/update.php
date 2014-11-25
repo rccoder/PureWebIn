@@ -19,6 +19,10 @@
 	{
 		if(mysql_affected_rows())
 			echo "<script>alert('更新成功！');location.href='../book_list.php';</script>";
+		else
+		{
+			echo "<script>alert('好像你没修改什么东西');location.href='../book_list.php';</script>";
+		}
 	}
 	else
 	{

@@ -5,6 +5,28 @@
 	<title>读书展示-读书管理系统</title>
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="js/search.js"></script>
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+  		$("input").keydown(function(){
+    	$("input").css("background-color","#FFFFCC");
+  		});
+  		var t="";
+  		$("input").keyup(function(){
+  			last=event.timeStamp;
+  			setTimeout(function(){
+  				if(last-event.timeStamp==0)
+  				{
+  						alert("ssss");
+  				}
+}, 500
+  				);
+    		
+  		}
+  		);
+
+		});
+	</script>
 </head>
 <body>
 	<div class="content">
@@ -25,14 +47,16 @@
 			<div class="bookright">
 				<div class="search">
 					<form action="" method="post" onsubmit="return search(this)">
-						<input type="text" class="booksearchInput" name="keyword" value="search.." />
+						<input type="text" id="number" class="booksearchInput" name="keyword" value="" />
 					</form>
+					<!--
 					<?php 
 						if($_POST['keyword'] && $_POST['keyword'] != "search..")
 						{
 							$search .= "and name like '%$_POST[keyword]%'";
 						}
 					 ?>
+					-->
 				</div>
 				<div class="list">
 					<table>
@@ -51,7 +75,7 @@
 								include_once('php/conn.php');
 								//include_one('php/page.php'); 
 
-								$sql = "SELECT * FROM book where  1=1 $search order by id";
+								$sql = "SELECT * FROM book where  1=1";
 								$result = mysql_query($sql) or die(mysql_error());
 								while($row = mysql_fetch_array($result))
 								{

@@ -29,3 +29,14 @@
  .bookcontent .type li a:hover{font-size:20px; background:rgb(47, 143, 211); border:15px solid rgb(47, 143, 211);}
  .bookcontent table{float:right; width:80%;margin-bottom:164px}
  .bookcontent th{border-bottom:1em solid white}
+ /*********************
+ *图书修改界面
+ **********************/
+ .bookupdate{float:right; margin-right:22%;}
+ .bookupdate label{float:left; font-size:1.2em}
+ .border-lines input{border:0px}
+ .bookupdate-content input{border-top:28px solid white; border-left:0px; border-right:0px; border-bottom:0.1em solid #77}
+ .bookupdate-content li{list-style-type:none; padding-left:45px}
+ .image-content{float:left; margin-left:20%; margin-top:4%}
+ #img {width:700px; height:400px; background:url("../image/1.jpg") center no-repeat; position:absolute; left:31px; top:26px;}
+ .bookthu input{margin-top:400px}
