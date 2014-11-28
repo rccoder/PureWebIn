@@ -7,7 +7,6 @@
     // Create database
     if (mysql_query("CREATE DATABASE bookmanage",$con))
     {
-    echo "Database created";
     }
     else
     {
@@ -37,9 +36,62 @@
     (
     bookname, bookdes, bookauthor, booktype, bookdata, bookprice
     )
-    VALUES('programing', 'this is a book!', 'k&r', 'code', '2014-01-01', 200)
-    ";
+    VALUES('c programing', 'this is a c book!', 'k&r', 'computer', '2014-01-01', 200);";
     mysql_query($sql, $con);
+
+     $sql = "INSERT INTO book
+    (
+    bookname, bookdes, bookauthor, booktype, bookdata, bookprice
+    )
+    VALUES('java programing', 'this is a java  book!', 'k&r', 'computer', '2014-01-01', 400);";
+    mysql_query($sql, $con);
+
+     $sql = "INSERT INTO book
+    (
+    bookname, bookdes, bookauthor, booktype, bookdata, bookprice
+    )
+    VALUES('banking', 'this is a banking book!', 'hit', 'financial', '2014-01-01', 200);";
+    mysql_query($sql, $con);
+
+    $sql = "INSERT INTO book
+    (
+    bookname, bookdes, bookauthor, booktype, bookdata, bookprice
+    )
+    VALUES('philosophy', 'this is a philosophy book!', 'hit', 'philosophy', '2012-01-01', 200);";
+    mysql_query($sql, $con);
+
+     $sql = "INSERT INTO book
+    (
+    bookname, bookdes, bookauthor, booktype, bookdata, bookprice
+    )
+    VALUES('sea', 'this is a literature book!', 'hit', 'literature', '2012-01-01', 200);";
+    mysql_query($sql, $con);
+
+    $sql = "INSERT INTO book
+    (
+    bookname, bookdes, bookauthor, booktype, bookdata, bookprice
+    )
+    VALUES('wuli', 'this is a literature book!', 'hit', 'lilun', '2012-01-01', 200);";
+    mysql_query($sql, $con);
+    $sql = "INSERT INTO book
+    (
+    bookname, bookdes, bookauthor, booktype, bookdata, bookprice
+    )
+    VALUES('wuli', 'this is a literature book!', 'hit', 'lilun', '2012-01-01', 200);";
+    mysql_query($sql, $con);
+    $sql = "INSERT INTO book
+    (
+    bookname, bookdes, bookauthor, booktype, bookdata, bookprice
+    )
+    VALUES('wuli', 'this is a literature book!', 'hit', 'lilun', '2012-01-01', 200);";
+    mysql_query($sql, $con);
+    $sql = "INSERT INTO book
+    (
+    bookname, bookdes, bookauthor, booktype, bookdata, bookprice
+    )
+    VALUES('wuli', 'this is a literature book!', 'hit', 'lilun', '2012-01-01', 200);";
+    mysql_query($sql, $con);
+
     mysql_close($con);
     }
     catch(Exception $e)

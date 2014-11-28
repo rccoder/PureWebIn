@@ -15,11 +15,11 @@
 			<form action="php/login.php" method="post" name="booklogin" onsubmit="return login_submit(this)">
 				<p>
 					<label>用户名：&nbsp;&nbsp;&nbsp;</label>
-					<input class="input" name="username" size="30" value="请输入常用邮箱" type="text" />
+					<input class="input" name="username" size="30" placeholder="请输入常用邮箱" type="text" />
 				</p>
 				<p>
 					<label>密&nbsp;&nbsp;&nbsp;码:&nbsp;&nbsp;&nbsp;&nbsp;</label>
-					<input class="input" name="password" size="30" value="仅支持数字，字母，下划线" type="text" />
+					<input class="input" name="password" size="30" placeholder="仅支持数字，字母，下划线" type="text" />
 				</p>
 				<p class="submit">
 					<input class="button-login" name="submit" value="&nbsp;&nbsp;&nbsp;&nbsp;登&nbsp;&nbsp;&nbsp;录&nbsp;&nbsp;&nbsp;&nbsp;" type="submit" />

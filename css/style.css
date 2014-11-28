@@ -10,7 +10,8 @@
  .content{text-align: center; font-family: "黑体";min-height: 600px;max-height: 600px;}
  .top{background: rgb(47, 143, 211); font-size: 14px;}
  .top h1{color:white; border:solid 20px rgb(47, 143, 211)}
- footer{height: 100px; font-family: "黑体";background: rgb(234, 227, 227);}
+ .top h1 a{ text-decoration:none;}
+ footer{margin-top:6em; margin-left:20px;height: 100px; font-family: "黑体";}
  footer p{text-align: right;max-width:100%;}
  
  /************************
@@ -29,6 +30,7 @@
  .bookcontent .type li a:hover{font-size:20px; background:rgb(47, 143, 211); border:15px solid rgb(47, 143, 211);}
  .bookcontent table{float:right; width:80%;margin-bottom:164px}
  .bookcontent th{border-bottom:1em solid white}
+ #search-auto{border:1px solid #817fb2; position:absolute;}
  /*********************
  *图书修改界面
  **********************/
@@ -37,6 +39,21 @@
  .border-lines input{border:0px}
  .bookupdate-content input{border-top:28px solid white; border-left:0px; border-right:0px; border-bottom:0.1em solid #77}
  .bookupdate-content li{list-style-type:none; padding-left:45px}
- .image-content{float:left; margin-left:20%; margin-top:4%}
- #img {width:700px; height:400px; background:url("../image/1.jpg") center no-repeat; position:absolute; left:31px; top:26px;}
- .bookthu input{margin-top:400px}
+ .image-content{float:left; margin-left: 20%; margin-top: 34%;}
+ #img {width:300px; height:400px; background:url("../image/1.jpg") center no-repeat; position:absolute; left:14em; top:8em;}
+ .btn_01{margin-top:400px;display:block;width:108px;height:282px;position:fixed;left: 10%;top:50%;margin-top:-141px;background: url("../image/arrow.png") no-repeat;border: 0px;}
+ .btn_02{display:block;width:108px;height:282px;position:fixed;left:40%;top:50%;margin-top:-141px;background:url("../image/arrow.png") no-repeat;background-position:0 -300px;border:0px}
+
+ .bookadd{float:right; margin-right:40%;}
+ .bookadd label{float:left; font-size:1.2em}
+ .border-lines input{border:0px}
+ .bookadd-content input{border-top:28px solid white; border-left:0px; border-right:0px; border-bottom:0.1em solid #77}
+ .bookadd-content li{list-style-type:none; padding-left:45px}
+
+.search{float:right; margin-bottom:1em}
+#search-auto li{list-style-type:none;background:#FFF; text-align:left;}
+#search-auto li a{display:block; padding:5px 6px; cursor:pointer; color:#666;}
+#search-auto li a:hover{background:#D8D8D8; text-decoration:none; color:#000;}
+#search-auto li.cls{float:right}
+.list button{width:120%;padding:2px;background:#FFF; text-align:left;}
+.list button a{text-decoration:none;}

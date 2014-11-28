@@ -189,7 +189,7 @@ var fx  = {
 $(function(){
 	var now=0;
 	var ready=true;
-	var W=700;
+	var W=300;
 	var H=400;	
 	var $img = $("#img");	
 	var oDiv = $img.get(0);
@@ -387,12 +387,13 @@ var Utils = {
 		 ?>
 		<div class="image-content">
 			<div id="img"></div>
+			<input id="btn_explode" type="button" value="" class="btn_01" />
+			<input id="btn_explode" type="button" value="" class="btn_02" />
 			<div class="bookthu">
 				<img src="image/2.jpg"  width="40" height="60px" alt="">
 				<img src="image/3.jpg"  width="40" height="60px" alt="">
 				<img src="image/4.jpg"  width="40" height="60px" alt="">
 				<img src="image/5.jpg"  width="40" height="60px" alt="">
-				<input id="btn_explode" type="button" value="爆炸" class="btn_01" />
 			</div>
 		</div>
 		<div class="bookupdate">
@@ -412,7 +413,7 @@ var Utils = {
 				</div>
 				<div class="bookupdate-content" >
 					<label>类型:</label>
-					<ol></ol>
+					<ol>
 					<li>
 					<input div="border-line" type="radio" <?php echo $computer ?> value="computer" name="booktype" />计算机</li>
 					<li><input div="border-line" type="radio" <?php  echo $financial ?> value="financial" name="booktype" />金融</li>
